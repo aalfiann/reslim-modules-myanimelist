@@ -1,0 +1,19 @@
+{
+    "package": {
+        "name": "MyAnimeList",
+        "url": "https://github.com/aalfiann/reslim-modules-myanimelist",
+        "description": "Unofficial MyAnimeList API.",
+        "version": "1.0",
+        "require": {
+            "reSlim": "1.14.2"
+        },
+        "license": {
+            "type": "MIT",
+            "url": "https://github.com/aalfiann/reslim-modules-myanimelist/blob/master/LICENSE.md"
+        },
+        "author": {
+            "name": "M ABD AZIZ ALFIAN",
+            "url": "https://github.com/aalfiann"
+        }
+    }
+}

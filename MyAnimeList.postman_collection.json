@@ -1,0 +1,457 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MyAnimeList",
+		"_postman_id": "77e1a1d2-e00e-ac13-ac3b-7831fc1bb808",
+		"description": "API Documentation about MyAnimeList module.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Info Module",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/get/info/?apikey={yourapikey}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"get",
+						"info",
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "{yourapikey}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get Info Module\n---\nGet info detail about MyAnimeList Module"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Anime by Title",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/search/anime/{yourusername}/{yourtoken}/?title={title of anime}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"search",
+						"anime",
+						"{yourusername}",
+						"{yourtoken}",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "{title of anime}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Search Anime by Title\n---\nThis will show many result search of anime."
+			},
+			"response": []
+		},
+		{
+			"name": "Find Anime by Title",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/find/anime/{yourusername}/{yourtoken}/?title={title of anime}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"find",
+						"anime",
+						"{yourusername}",
+						"{yourtoken}",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "{title of anime}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Find Anime by Title\n---\nThis will choose the closest anime automatically from the title that you typed"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Anime by ID",
+			"request": {
+				"url": "http://localhost:1337/reSlim/src/api/myanimelist/get/anime/{yourusername}/{yourtoken}/{anime id}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get Anime by ID\n---\nThis will get data anime directly by ID."
+			},
+			"response": []
+		},
+		{
+			"name": "Search Manga by Title",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/search/manga/{yourusername}/{yourtoken}/?title={title of manga}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"search",
+						"manga",
+						"{yourusername}",
+						"{yourtoken}",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "{title of manga}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Search Manga by Title\n---\nThis will show many result search of manga."
+			},
+			"response": []
+		},
+		{
+			"name": "Find Manga by Title",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/find/manga/{yourusername}/{yourtoken}/?title={title of manga}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"find",
+						"manga",
+						"{yourusername}",
+						"{yourtoken}",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "{title of manga}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Find Manga by Title\n---\nThis will choose the closest manga automatically from the title that you typed"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Manga by ID",
+			"request": {
+				"url": "http://localhost:1337/reSlim/src/api/myanimelist/get/manga/{yourusername}/{yourtoken}/{manga id}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get Manga by ID\n---\nThis will get data manga directly by ID."
+			},
+			"response": []
+		},
+		{
+			"name": "Search Anime by Title Public",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/search/anime?apikey={yourapikey}&title={title of anime}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"search",
+						"anime"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "{yourapikey}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "title",
+							"value": "{title of anime}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Search Anime by Title Public\n---\nThis will show many result search of anime for public access with api key."
+			},
+			"response": []
+		},
+		{
+			"name": "Find Anime by Title Public",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/find/anime?apikey={yourapikey}&title={title of anime}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"find",
+						"anime"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "{yourapikey}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "title",
+							"value": "{title of anime}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Find Anime by Title Public\n---\nThis will choose the closest anime automatically from the title that you typed for public access with api key."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Anime by ID Public",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/get/anime/{anime id}?apikey={yourapikey}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"get",
+						"anime",
+						"{anime id}"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "{yourapikey}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get Anime by ID Public\n---\nThis will get data anime directly by ID for public access with api key."
+			},
+			"response": []
+		},
+		{
+			"name": "Search Manga by Title Public",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/search/manga?apikey={yourapikey}&title={title of manga}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"search",
+						"manga"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "{yourapikey}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "title",
+							"value": "{title of manga}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Search Manga by Title Public\n---\nThis will show many result search of manga for public access with api key."
+			},
+			"response": []
+		},
+		{
+			"name": "Find Manga by Title Public",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/find/manga?apikey={yourapikey}&title={title of manga}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"find",
+						"manga"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "{yourapikey}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "title",
+							"value": "{title of manga}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Find Manga by Title Public\n---\nThis will choose the closest manga automatically from the title that you typed for public access with api key."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Manga by ID Public",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/reSlim/src/api/myanimelist/get/manga/{manga id}?apikey={yourapikey}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"reSlim",
+						"src",
+						"api",
+						"myanimelist",
+						"get",
+						"manga",
+						"{manga id}"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "{yourapikey}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get Manga by ID Public\n---\nThis will get data manga directly by ID for public access with api key."
+			},
+			"response": []
+		}
+	]
+}
