@@ -80,7 +80,7 @@ use PDO;                                            //To connect with database
                 $mal->pretty = $this->pretty;
                 $datajson = $mal->findAnime($this->title,true);
                 $myjson = json_decode($datajson);
-                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->title,$datajson);
+                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->title,$datajson,86400);
             }
             $json = json_decode($datajson);
             if (!empty($json) && $json->status == 'success'){
@@ -110,7 +110,7 @@ use PDO;                                            //To connect with database
                 $mal->pretty = $this->pretty;
                 $datajson = $mal->findAnime($this->title,false);
                 $myjson = json_decode($datajson);
-                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->title,$datajson);
+                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->title,$datajson,86400);
             }
             $json = json_decode($datajson);
             if (!empty($json) && $json->status == 'success'){
@@ -141,7 +141,7 @@ use PDO;                                            //To connect with database
                 $mal->pretty = $this->pretty;
                 $datajson = $mal->grabAnime($this->id);
                 $myjson = json_decode($datajson);
-                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->id,$datajson);
+                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->id,$datajson,86400);
             }
             $json = json_decode($datajson);
             if(!empty($json) && $json->status == 'success'){
@@ -172,7 +172,7 @@ use PDO;                                            //To connect with database
                 $mal->pretty = $this->pretty;
                 $datajson = $mal->findManga($this->title,true);
                 $myjson = json_decode($datajson);
-                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->title,$datajson);
+                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->title,$datajson,86400);
             }
             $json = json_decode($datajson);
             if (!empty($json) && $json->status == 'success'){
@@ -202,7 +202,7 @@ use PDO;                                            //To connect with database
                 $mal->pretty = $this->pretty;
                 $datajson = $mal->findManga($this->title,false);
                 $myjson = json_decode($datajson);
-                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->title,$datajson);
+                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->title,$datajson,86400);
             }
             $json = json_decode($datajson);
             if (!empty($json) && $json->status == 'success'){
@@ -233,7 +233,7 @@ use PDO;                                            //To connect with database
                 $mal->pretty = $this->pretty;
                 $datajson = $mal->grabManga($this->id);
                 $myjson = json_decode($datajson);
-                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->id,$datajson);
+                if (!empty($myjson) && $myjson->status == 'success') UniversalCache::writeCache($key.$this->id,$datajson,86400);
             }
             $json = json_decode($datajson);
             if(!empty($json) && $json->status == 'success'){
